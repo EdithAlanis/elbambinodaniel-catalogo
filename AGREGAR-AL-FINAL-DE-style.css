@@ -1,0 +1,9 @@
+
+/* AÑADIR AL FINAL DE style.css */
+.promociones{max-width:1150px;margin:38px auto;padding:26px;background:#fff;border-radius:22px;border:1px solid #e0e7f1}
+.promo-head span{font-weight:800;letter-spacing:2px;color:#1769c2}.promo-head h2{font:700 34px Georgia,serif;margin:8px 0}.promo-head p{color:#65738a}
+.promo-text-grid,.promo-img-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:20px}
+.promo-oferta{border:1px solid #e0e7f1;border-radius:16px;padding:20px}.promo-oferta h3{font-size:24px;margin:0 0 8px}.promo-oferta strong{font-size:28px}.promo-oferta p{color:#65738a;line-height:1.45}
+.promo-img-grid figure{margin:0}.promo-img-grid img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid #e0e7f1}
+.regulados{margin-top:22px;padding:18px;border-radius:14px;background:#fff8e6;color:#6b5420}.regulados h3{margin-top:0}
+@media(max-width:650px){.promociones{margin:24px 14px;padding:18px}}

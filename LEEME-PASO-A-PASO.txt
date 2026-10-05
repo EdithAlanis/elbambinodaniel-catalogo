@@ -1,0 +1,24 @@
+ACTUALIZACIÓN DE PROMOCIONES — EL BAMBINO DANIEL
+
+IMPORTANTE: este paquete NO sustituye el catálogo que ya está funcionando.
+
+1. Suba a la raíz del repositorio estas imágenes:
+   promo-lantus.png
+   promo-humalog.png
+   promo-drenaje-linfatico.png
+
+2. Abra index.html y copie el contenido de BLOQUE-PARA-INDEX.html antes de la nota final del catálogo.
+
+3. Abra style.css y pegue al final el contenido de AGREGAR-AL-FINAL-DE-style.css.
+
+4. Haga Commit changes.
+
+Incluye:
+- Forxiga: 3 por $1,000 MXN.
+- Trayenta: 3 por $1,000 MXN.
+- Lantus: imagen promocional 3 por $495.
+- Humalog: imagen promocional 3 por $1,050.
+- Drenaje Linfático Mayaverra: imagen promocional 3 por $1,500.
+- Aviso informativo para medicamentos sujetos a control sanitario.
+
+La imagen promocional de tramadol se conserva en el paquete únicamente como referencia y NO se inserta en la tienda ni se configura con compra directa.
