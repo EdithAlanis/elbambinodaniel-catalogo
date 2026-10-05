@@ -36,7 +36,13 @@ const products=[
 {name:'Guantes Ambiderm estéril mediano',detail:'Caja con 100 guantes',price:160,cat:'Guantes',icon:'🧤'},
 {name:'Guantes Ambiderm estéril grande',detail:'Caja con 100 guantes',price:160,cat:'Guantes',icon:'🧤'},
 {name:'Suplemento alimenticio con 17 vitaminas',detail:'Suplemento alimenticio',price:300,cat:'Vitaminas y suplementos',icon:'🌿'}
+,
+{name:'Forxiga',detail:'Promoción: 3 cajas por $1,000',price:1000,cat:'Promociones',icon:'💙'},
+{name:'Trayenta',detail:'Promoción: 3 cajas por $1,000',price:1000,cat:'Promociones',icon:'💙'}
 ];
+
+const regulated = [{"name": "Alprazolam de 1 mg con 30 tabletas", "retail": 217.35, "wholesale": 189.0}, {"name": "Alprazolam de 0.25 mg", "retail": 149.5, "wholesale": 130.0}, {"name": "Alprazolam de 0.50 mg con 30 tabletas", "retail": 226.55, "wholesale": 197.0}, {"name": "Alprazolam de 2 mg con 30 tabletas", "retail": 325.45, "wholesale": 283.0}, {"name": "Axcion fentermina 30 mg con 30 tabletas", "retail": 356.5, "wholesale": 310.0}, {"name": "Axcion fentermina AP 30 mg con 30 tabletas", "retail": 572.7, "wholesale": 498.0}, {"name": "Bromazepam 3 mg con 30 tabletas", "retail": 207.0, "wholesale": 180.0}, {"name": "Buprenorfina 0.3 mg IV, 5 ámpulas", "retail": 517.5, "wholesale": 450.0}, {"name": "Clonazepam gotas", "retail": 103.5, "wholesale": 90.0}, {"name": "Clonazepam tabletas", "retail": 103.5, "wholesale": 90.0}, {"name": "Diazepam", "retail": 103.5, "wholesale": 90.0}, {"name": "Diazepam 10 mg Tempus", "retail": 115.0, "wholesale": 100.0}, {"name": "Diazepam 50 ampolletas", "retail": 667.0, "wholesale": 580.0}, {"name": "Esbecalps 60 tabletas", "retail": 962.55, "wholesale": 837.0}, {"name": "Farmapram (Alprazolam 0.50 mg c/30)", "retail": 294.4, "wholesale": 256.0}, {"name": "Farmapram (Alprazolam 2 mg c/30)", "retail": 488.75, "wholesale": 425.0}, {"name": "Imipramina 25 mg con 20", "retail": 143.75, "wholesale": 125.0}, {"name": "Itravil clobenzorex 30 mg con 60 cápsulas", "retail": 960.25, "wholesale": 835.0}, {"name": "Lose 1 mg", "retail": 279.45, "wholesale": 243.0}, {"name": "Lose 2 mg", "retail": 333.5, "wholesale": 290.0}, {"name": "Lozam 1 mg c/40", "retail": 581.9, "wholesale": 506.0}, {"name": "Lozam 2 mg c/40", "retail": 1040.18, "wholesale": 904.5}, {"name": "Lozam 2 mg c/80", "retail": 1676.7, "wholesale": 1458.0}, {"name": "Metilfenidato 10 mg c/60", "retail": 379.5, "wholesale": 330.0}, {"name": "Metilfenidato 27 mg c/30", "retail": 1234.24, "wholesale": 1073.25}, {"name": "Metilfenidato 54 mg c/30", "retail": 1490.4, "wholesale": 1296.0}, {"name": "Obeclox c/60", "retail": 993.6, "wholesale": 864.0}, {"name": "Terfarmex fentermina 15 mg", "retail": 262.2, "wholesale": 228.0}, {"name": "Tradea LP (Metilfenidato 20 mg liberación prolongada) c/30", "retail": 1118.95, "wholesale": 973.0}, {"name": "Tramadol Adiolol 100 mg c/50 tabletas", "retail": 264.5, "wholesale": 230.0}, {"name": "Tramadol / Ketorolaco 10 mg / 25 mg c/6 Sinoris", "retail": 138.0, "wholesale": 120.0}, {"name": "Tramadol / Paracetamol B Tracet-ER 20 tabletas", "retail": 161.0, "wholesale": 140.0}];
+
 
 const money=n=>new Intl.NumberFormat('es-MX',{style:'currency',currency:'MXN'}).format(n);
 function link(p){
@@ -51,4 +57,9 @@ function render(){
 }
 document.querySelector('#search').addEventListener('input',render);
 document.querySelector('#cat').addEventListener('change',render);
+function renderRegulated(){
+  const body=document.querySelector('#regulated-list');
+  body.innerHTML=regulated.map(p=>`<tr><td><strong>${p.name}</strong></td><td>${money(p.retail)}</td><td class="wholesale-price">${money(p.wholesale)}</td></tr>`).join('');
+}
 render();
+renderRegulated();

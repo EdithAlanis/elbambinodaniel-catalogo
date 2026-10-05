@@ -1,4 +1,18 @@
-CATÁLOGO COMPLETO - EL BAMBINO DANIEL
+EL BAMBINO DANIEL — ACTUALIZACIÓN PROMOCIONES + MEDICAMENTOS CONTROLADOS
 
-Suba TODOS estos archivos a la raíz del repositorio elbambinodaniel-catalogo y reemplace los existentes.
-Esta versión conserva GitHub Pages y amplía el catálogo de equipo médico, pruebas, protección, laboratorio y guantes.
+SUBIR A GITHUB:
+1. Abra el repositorio elbambinodaniel-catalogo.
+2. Code > Add file > Upload files.
+3. Suba TODOS los archivos de esta carpeta a la raíz.
+4. Si GitHub pregunta, reemplace los archivos existentes.
+5. Pulse Commit changes.
+6. Espere 1–3 minutos y abra https://elbambinodaniel.com
+7. Si ve la versión anterior, pulse Ctrl+F5.
+
+INCLUYE:
+- Todos los productos del catálogo que ya estaba funcionando.
+- Forxiga y Trayenta: 3 por $1,000.
+- Promociones visuales Lantus, Humalog, Tramadol y Drenaje Linfático.
+- Lista de medicamentos sujetos a prescripción/control sanitario.
+- Dos columnas de precio: menos de $2,500 y mayoreo desde $2,500.
+- Aviso de venta profesional y requisitos sanitarios.

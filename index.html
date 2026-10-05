@@ -1,26 +1,61 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>El Bambino Daniel | Catálogo WhatsApp</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El Bambino Daniel | Catálogo de productos y ofertas</title>
+<link rel="stylesheet" href="style.css?v=20261005-2">
 </head>
 <body>
 <header>
-<img src="logo-el-bambino-daniel.png" alt="El Bambino Daniel">
-<div><h1>EL BAMBINO DANIEL</h1><p>Catálogo de productos y ofertas</p></div>
-<a class="wa top" href="https://wa.me/523331191167?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20cat%C3%A1logo%20de%20El%20Bambino%20Daniel" target="_blank">WhatsApp</a>
+  <img src="logo-el-bambino-daniel.png" alt="El Bambino Daniel">
+  <div><h1>EL BAMBINO DANIEL</h1><p>Catálogo de productos y ofertas</p></div>
+  <a class="wa top" href="https://wa.me/523331191167?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20cat%C3%A1logo%20de%20El%20Bambino%20Daniel" target="_blank">WhatsApp</a>
 </header>
 <main>
-<section class="hero"><div><span>COMPRA FÁCIL</span><h2>Pide directamente por WhatsApp</h2>
-<p>Selecciona un producto y toca “Pedir por WhatsApp”. Confirma disponibilidad, precio y entrega antes de pagar.</p></div></section>
+<section class="hero">
+  <div><span>COMPRA FÁCIL</span><h2>Pide directamente por WhatsApp</h2>
+  <p>Selecciona un producto y toca “Pedir por WhatsApp”. Confirma disponibilidad, precio y entrega antes de pagar.</p></div>
+</section>
+
+<section class="promos" id="promociones">
+  <div class="section-title"><span>PROMOCIONES</span><h2>Ofertas disponibles</h2><p>Consulta disponibilidad antes de realizar tu pedido.</p></div>
+  <div class="promo-grid">
+    <article class="promo-text"><div class="promo-badge">OFERTA</div><h3>Forxiga</h3><strong>3 por $1,000</strong><a class="wa" target="_blank" href="https://wa.me/523331191167?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20la%20promoci%C3%B3n%20Forxiga%203%20por%20%241%2C000">Solicitar por WhatsApp</a></article>
+    <article class="promo-text"><div class="promo-badge">OFERTA</div><h3>Trayenta</h3><strong>3 por $1,000</strong><a class="wa" target="_blank" href="https://wa.me/523331191167?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20la%20promoci%C3%B3n%20Trayenta%203%20por%20%241%2C000">Solicitar por WhatsApp</a></article>
+    <article class="promo-img"><img src="promo-lantus.png" alt="Promoción Lantus 3 por $495"></article>
+    <article class="promo-img"><img src="promo-humalog.png" alt="Promoción Humalog 3 por $1,050"></article>
+    <article class="promo-img"><img src="promo-tramadol-informativa.png" alt="Información de productos de tramadol"></article>
+    <article class="promo-img"><img src="promo-drenaje-linfatico.png" alt="Promoción Drenaje Linfático 3 por $1,500"></article>
+  </div>
+</section>
+
 <div class="tools">
-<input id="search" placeholder="Buscar producto...">
-<select id="cat"><option>Todos</option><option>Equipo médico</option><option>Pruebas rápidas</option><option>Protección</option><option>Laboratorio</option><option>Guantes</option><option>Vitaminas y suplementos</option></select>
+  <input id="search" placeholder="Buscar producto...">
+  <select id="cat">
+    <option>Todos</option><option>Equipo médico</option><option>Pruebas rápidas</option>
+    <option>Protección</option><option>Laboratorio</option><option>Guantes</option>
+    <option>Vitaminas y suplementos</option>
+  </select>
 </div>
 <section id="grid" class="grid"></section>
-<p class="note"><strong>Ventas a farmacias y laboratorios.</strong> Precios sujetos a confirmación de existencia, presentación y entrega. Los productos sujetos a prescripción o control sanitario se gestionan únicamente conforme a los requisitos legales aplicables.</p>
+
+<section class="regulated" id="controlados">
+  <div class="section-title"><span>VENTA PROFESIONAL</span><h2>Medicamentos sujetos a prescripción o control sanitario</h2></div>
+  <div class="regulated-notice">
+    <strong>Precios para farmacias y establecimientos autorizados.</strong>
+    <p>En compras de <b>$2,500 MXN o más</b> aplica la columna de precio de mayoreo indicada. Disponibilidad y dispensación sujetas a receta, documentación y requisitos sanitarios aplicables.</p>
+  </div>
+  <div class="regulated-table-wrap">
+    <table class="regulated-table">
+      <thead><tr><th>Producto</th><th>Menos de $2,500</th><th>$2,500 o más</th></tr></thead>
+      <tbody id="regulated-list"></tbody>
+    </table>
+  </div>
+</section>
+
+<p class="note">Precios sujetos a confirmación y disponibilidad. La venta de productos sujetos a prescripción o control sanitario se realiza únicamente conforme a los requisitos sanitarios aplicables.</p>
 </main>
-<footer>El Bambino Daniel · Pedidos por WhatsApp: 33 3119 1167</footer>
-<script src="catalogo.js"></script>
+<footer>El Bambino Daniel · Pedidos e informes por WhatsApp: 33 3119 1167</footer>
+<script src="catalogo.js?v=20261005-2"></script>
 </body></html>
