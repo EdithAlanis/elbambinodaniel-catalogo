@@ -1,0 +1,11 @@
+CATÁLOGO WHATSAPP - EL BAMBINO DANIEL
+
+Este catálogo es independiente y NO usa Render, base de datos ni panel de pedidos.
+Número configurado: 33 3119 1167 (México).
+
+Para publicarlo en un repositorio separado de GitHub Pages:
+1. Cree un repositorio nuevo, por ejemplo: elbambino-catalogo-whatsapp
+2. Suba a la raíz: index.html, style.css, catalogo.js y logo-el-bambino-daniel.png
+3. Active GitHub Pages para la rama main / root.
+
+No sustituya todavía los archivos del sitio principal elbambinodaniel.com.
